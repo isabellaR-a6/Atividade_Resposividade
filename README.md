@@ -5,7 +5,7 @@ O objetivo foi aplicar conceitos de Flexbox, CSS Grid e Media Queries para que a
 
  Projetos Incluídos
  -------------------
- -Apresentação Pessoal
+ Apresentação Pessoal
  -
 
 
@@ -20,7 +20,7 @@ O objetivo foi aplicar conceitos de Flexbox, CSS Grid e Media Queries para que a
 -Em telas menores (max-width:768px), a ordem do conteúdo é invertida (flex-direction: column-reverse).
 -Ajustes de margens e alinhamentos para melhorar a experiência mobile.
 
-. -Galeria de Fotos
+Galeria de Fotos
 -
 
 📌 Descrição:
@@ -36,7 +36,7 @@ O objetivo foi aplicar conceitos de Flexbox, CSS Grid e Media Queries para que a
 -Ajuste automático do tamanho da galeria.
 
 
--Blog da Curva (Fórmula 1)
+Blog da Curva (Fórmula 1)
 -
 
 📌 Descrição:
