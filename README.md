@@ -43,6 +43,9 @@ Blog da Curva (Fórmula 1)
 
 -Página de blog usando CSS Grid Layout para distribuir nav, main, sidebar e footer.
 
+<img width="1907" height="878" alt="image" src="https://github.com/user-attachments/assets/ae382b39-f500-468e-9622-d4bdd36b603a" />
+
+
 *Responsividade:*
 
 -Em telas menores (max-width:768px), o layout muda para uma coluna, mantendo a hierarquia de conteúdo.
@@ -57,6 +60,9 @@ Blog da Curva (Fórmula 1)
 -Lista de pratos com imagens e preços.
 
 -Estrutura de galeria responsiva parecida com o projeto de fotos.
+
+<img width="1883" height="864" alt="image" src="https://github.com/user-attachments/assets/3504e8f1-6633-415c-afb6-8bf40c02d9ee" />
+
 
 *Responsividade:*
 
