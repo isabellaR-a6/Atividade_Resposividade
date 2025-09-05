@@ -1,0 +1,168 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.Container{
+     display: grid;  
+     /* Ativa o layout em grade (Css grid) */
+      height: 100vh;  
+      /* vh ocupa a tela toda  igual o %*/
+      /* criar 4 colunas iguais(com 1fr, 1 fração de espaço disponivel) */
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+
+      /* definir 4 linhas com alturas prporcionais 
+      - 0,2 fr = linha pequena
+      -0,8fr = linha menor
+      -1,2fr =  uma linha média
+      -1,5fr = linha maior
+       */
+
+       grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+
+       grid-template-areas: 
+       "nav nav nav nav" /* na linha 1 nav ocupa todas 4 colunas*/
+       "Sidebar main main main" /*Linha 2 side ocupa 1 coluna, main nas outras 3 restantes*/
+       "Sidebar main main main"
+       "footer footer footer footer";                 /*Onde fica cada elemento/ordem*/
+
+       gap: o.2rem;            /* isso eu mudei tbm e mudou nada */
+       font-weight: 200;                            /* esse troço não sei oq faz Já q eu mudei o tamanho e mudou bolhufas*/
+       /* texte transform uppercase deixa a fonte grande  */
+       text-transform: uppercase;
+       font-size: 14px;                                /* Tamanho da letra*/
+       text-align: center;                             /*Essa alinha no centro ou qualquer lugar*/
+       font-family: Arial, Helvetica, sans-serif;        /* essa muda a fonte*/
+}
+
+nav{
+    background: antiquewhite;  
+    grid-area: nav;
+    border: 1px solid antiquewhite;
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    border: 2px solid black;
+}
+
+nav ul{
+    color: rgb(129, 5, 5);
+    list-style: none;
+     display: flex;
+    flex-direction: row;
+}
+
+nav li{
+    color: rgb(129, 5, 5);
+    padding: 0 30px;
+   
+}
+
+nav li:hover{
+    cursor: pointer;
+    transition: 0.5s ease;
+    color: #fd2f2f;
+    font-size: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    color:#7f0202 ;
+}
+
+main{
+    background: antiquewhite;
+    border-radius: 5px;  /* Catos arredondados*/
+    padding-top: 5px; /* Espaço que fica em cima */
+    grid-area: main;  /*grid area deve ser colocada em todas as colunas depois de ja ter colocado a ordem na grid area de cima */
+    color: #890101;
+}
+
+main p{
+    text-align: justify;
+    width: 600px;
+    margin: 0 auto;
+    margin-bottom: 1pc;
+    
+}
+
+main img{
+    width: 200px;
+    width: 200px;
+}
+
+
+#Sidebar{
+    background: #890101;
+    border-radius: 5px;  /* Cantos arredondados*/
+    padding-top: 5px; /* Espaço que fica em cima */
+    grid-area: Sidebar;
+    border: 1px solid black;  /* bordinha bonitinha😊*/
+    color: antiquewhite;
+
+}
+
+#Sidebar img{
+    width: 200px;
+    height: 300px;
+    margin-top: -10px;
+}
+
+
+
+
+   footer{
+    background: #7f0202;
+    border-radius: 5px;  /* Catos arredondados*/
+    padding-top: 5px; /* Espaço que fica em cima */
+    grid-area: footer;
+   }
+
+   .contatos{
+    color: antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+   }
+
+   .copy{
+    color: antiquewhite;
+   }
+
+    /* se você selecionar um elemento que todos os lugares tem e  apertar control +d varias vezes depois dar control e setinha ate o final e depois dar enter você consegue adicionar todos de uma vez só  */
+
+   @media (max-width:768px){ 
+
+    .Container{   
+        flex-direction: column;
+
+        grid-template-columns: 1fr;  
+        grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.0fr;   
+        
+        grid-template-areas:        
+        "nav"
+        "main"
+        "main"
+        "main"
+        "Sidebar"
+        "footer";
+
+    }
+
+    #Sidebar {
+        margin-top: 400px;
+    }
+
+     #texto{
+        width: 50%;
+    }
+
+   nav ul{ 
+    width: 10%;
+
+   }
+
+
+   }  
+   

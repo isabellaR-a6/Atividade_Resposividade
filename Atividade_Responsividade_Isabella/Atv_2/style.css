@@ -1,0 +1,89 @@
+.container{
+    display: flex;  
+    
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    padding: 20px;  
+    max-width: 1200px;  
+    position: relative;
+    margin:0 auto;  
+}
+
+.fotos{
+    width: 25%;  /* cada foto ocupa 30% de espaço no container*/
+    background-color: rgb(234, 218, 249);
+    border: 1px solid #6a6868;
+    padding: 20px; /*dei um espaço para afastar das bordas*/
+    margin-bottom: 20px;  /*margem bottom arruma o espaço entre os elemntos na parte de baixo*/
+    display: flex;  /*deixa as palavras móveis para mexer nos elementos */
+    flex-direction: column;  /*deixou as letras em coluna*/
+    justify-content: space-between;
+    position: relative;
+     
+}
+
+.fotos img{
+    width: 100%;  /*faz a imagem ocupar toda a largura da polaroid*/
+    height: auto;  /* ajusta a altura para não distorcer a foto*/
+} 
+
+#gatinho{
+    position: relative;
+     
+}
+
+.laranja{
+    position: absolute;
+    top: 35%;
+    right: 35%;
+    transform: scale(0.5);
+}
+
+h1{
+    margin: 0; /*tira as configurações do body*/
+    text-align: center;   
+    color: rgb(102, 24, 117);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(235, 185, 255);
+}
+
+.fotos h2{
+    margin: 0; 
+    text-align: center;   
+    color: rgb(102, 24, 117);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(235, 185, 255);
+}
+
+.fotos p{
+    margin: 0; 
+    text-align: center;   
+    color: rgb(102, 24, 117);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+img{
+    width: 250px;
+    height: 250px;
+}
+
+img:hover{
+    
+}
+
+@media(max-width:2000px){
+    .container{
+    width: 60%;
+    }
+}
+
+@media(max-width:768px){
+
+        .container{
+            flex-direction: column;
+            align-items: center;
+        }
+
+       
+}
+
